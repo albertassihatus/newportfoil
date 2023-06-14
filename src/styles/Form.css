@@ -1,0 +1,13 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input {
+    padding: 10px;
+}
+
+.contact-form textarea {
+    padding: 10px;
+}

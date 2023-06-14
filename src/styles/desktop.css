@@ -1,0 +1,278 @@
+.header {
+    padding: 0 0 0 50px;
+    position: fixed;
+    left: 50px;
+    right: 50px;
+    top: 40px;
+    height: 80px;
+    z-index: 100;
+    background: #585d65;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 80px;
+    -moz-border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -khtml-border-radius: 80px;
+    transition: all .7s cubic-bezier(.165,.85,.45,1);
+    -moz-transition: all .7s cubic-bezier(.165,.85,.45,1);
+    -webkit-transition: all .7s cubic-bezier(.165,.85,.45,1);
+    -o-transition: all .7s cubic-bezier(.165,.85,.45,1);
+}
+
+.header-logo p {
+font-size: 18px;
+font-weight: bold;
+}
+
+.btn-menu {
+    margin-right: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo a {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: white;
+}
+
+.header-logo a:hover {
+    color: #69E4D2;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header ul li {
+   font-size: 14px;
+   font-weight: bold;
+   margin-right: 30px;
+}
+
+.header ul li:hover {
+    cursor:pointer;
+    color: #69E4D2;
+ }
+
+ .header button:hover {
+    color: #69E4D2;
+ }
+
+.wrapper {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 45%;
+}
+
+.section-box {
+    text-align: left;
+    overflow-x: hidden;
+    width: 41vw;
+    padding-right: 50px;
+}
+
+.bg-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+}
+
+.photo-bg {
+    background-image: url(../assets/photobg.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.5;
+    border-radius: 10%;
+    box-shadow: inset 0 0 20px 15px #242424;
+}
+
+.indexContainer {
+    background-color: #242424;
+    width: 50%;
+    height: 21%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    margin: 50px 0 10px 0;
+    letter-spacing: .2rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 55px;
+    margin: 0;
+    letter-spacing: .2rem;
+    font-weight: 800;
+}
+
+h3 {
+    color: #69E4D2;
+    font-size: 14px;
+    margin: 0 0 50px 0;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.about-list{
+    padding: 0;
+}
+
+.about-list li{
+    color: #69E4D2;
+    margin-bottom: 10px;
+}
+
+.about-list span {
+    color: white !important;
+}
+
+.about-social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+.service-do {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+}
+
+.service-icon {
+    font-size: 32px;
+}
+
+.service-title {
+    width: 20px;
+    margin: 10px 0 30px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.service-p {
+    font-size: 14px;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.working {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.working h3 {
+    font-size:18px;
+    margin-bottom: 10px;
+}
+
+.working p {
+    margin: 0;
+}
+
+.working span {
+    color: white;
+}
+
+.tech-container {
+    height: auto;
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.project-sliders img {
+    margin: 20px 0 20px 0;
+}
+
+.svg-test-next-arrow{
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.svg-test-next-arrow:hover{
+    color: #69E4D2;
+}
+
+.certificados {
+    margin-top: 20px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .wapp-icon {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 30px;
+    padding: 20px;
+  }
+  
