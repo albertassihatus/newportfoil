@@ -81,6 +81,10 @@ h2 {
     justify-content: center;
 }
 
+.about-social a {
+    background-color: #1a1a1a !important;
+}
+
 .working {
     width: 100%;
 }
