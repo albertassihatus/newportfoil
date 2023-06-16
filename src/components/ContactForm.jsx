@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser'
-import '../styles/form.css'
+import '../styles/Form.css'
 
 
 function ContactForm() {
