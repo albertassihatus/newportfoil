@@ -56,8 +56,8 @@ function App() {
                   <div className='service-do'>
                     <div className='service-col'>
                       <div className='service-icon'><FontAwesomeIcon icon={faCode} style={{color: "#69E4D2",}} /></div>
-                      <div className='service-title'>Web Development</div>
-                      <div className='service-p'>Experiência sólida no desenvolvimento e manutenção de websites, com foco em JavaScript, CSS e HTML. Proficiente em WordPress, personalizando temas para atender às necessidades dos clientes. Habilidade em TWIG para agilizar o desenvolvimento. Conhecimento em Shopify para criação de lojas virtuais. Experiência em garantir responsividade e compatibilidade entre navegadores, priorizando uma experiência de usuário excepcional.</div>
+                      <div className='service-title'><p>Web Development</p></div>
+                      <div className='service-p'><p>Experiência sólida no desenvolvimento e manutenção de websites, com foco em JavaScript, CSS e HTML. Proficiente em WordPress, personalizando temas para atender às necessidades dos clientes. Habilidade em TWIG para agilizar o desenvolvimento. Conhecimento em Shopify para criação de lojas virtuais. Experiência em garantir responsividade e compatibilidade entre navegadores, priorizando uma experiência de usuário excepcional.</p></div>
                     </div>
                     {/* <div>
                       <div className='service-icon'><FontAwesomeIcon icon={faGamepad} style={{color: "#69E4D2",}}/></div>

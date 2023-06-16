@@ -32,6 +32,9 @@ font-weight: bold;
     align-items: center;
 }
 
+.btn-menu ul a {
+    color: white;
+}
 .btn-menu-mobile {
     display: none;
 }
@@ -228,6 +231,7 @@ hr {
 .svg-test-next-arrow{
     font-size: 50px;
     cursor: pointer;
+    color: white;
 }
 
 .svg-test-next-arrow:hover{

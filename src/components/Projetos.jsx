@@ -102,7 +102,7 @@ export default class Projetos extends Component {
               <FontAwesomeIcon icon={faCss3} size="2xl"style={{color: "#69E4D2",}} />&nbsp;&nbsp;&nbsp;
             </div>
             <img src={inteligencia} width="100%" height="auto" alt="" />
-            <a href="http://www.institutosimonesalgado.com/inteligenciaemocional/" target="_blank"><button>Aplicação</button></a>
+            <a className="app-btn" href="http://www.institutosimonesalgado.com/inteligenciaemocional/" target="_blank"><button>Aplicação</button></a>
           </div>
         </Slider>
       </div>
