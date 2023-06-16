@@ -26,7 +26,7 @@ export default class Header extends Component {
             <p>Hatus Albertassi</p>
           </a>
         </div>
-        <div className="btn-menu">
+        <nav className="btn-menu">
           <ul>
             <a href="/"><li>HOME</li></a>
             <a href="#about"><li>SOBRE</li></a>
@@ -41,7 +41,7 @@ export default class Header extends Component {
               <a href="https://drive.google.com/file/d/1E_AK6QRSrfh5HdI6dp7EHmOSUfZL2YoV/view?usp=sharing" target="_blank" rel="noopener noreferrer">Inglês</a>
             </div>
           </div>
-        </div>
+        </nav>
         <div className={`btn-menu-mobile ${isMenuOpen ? 'open' : ''}`}>
           <button className="menu-toggle" onClick={this.handleMenuToggle}>
             <span className="hamburger-bar"></span>
