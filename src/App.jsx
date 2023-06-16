@@ -1,19 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import './styles/desktop.css'
+import './styles/mobile.css'
 import Header  from './components/Header.jsx'
 import ContactForm from './components/ContactForm'
-import Footer from './components/Footer'
 import certification from './assets/certification.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons'
-import { faGamepad } from '@fortawesome/free-solid-svg-icons'
 import { faCss3, faGithub, faHtml5, faJs, faLinkedin, faNode, faPhp, faReact, faShopify, faSymfony, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons'
 import Projetos from './components/Projetos'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <body>
@@ -29,7 +26,7 @@ function App() {
               <div>
                 <h1>Hatus Albertassi</h1>
                 <h3>FULL STACK DEVELOPER</h3>
-                <p>Olá! Sou desenvolvedor web. Tenho experiência em design e construção de sites, também sou bom em wordpress. Eu adoraria conversar com você.</p> 
+                <p className='about-p'>Olá! Sou desenvolvedor web. Tenho experiência em design e construção de sites, também sou bom em wordpress. Eu adoraria conversar com você.</p> 
                 <div className='about-social' id="about">               
                   <button><a href="https://wa.me/5524999252710" target='_blank'><div className='service-icon'><FontAwesomeIcon icon={faWhatsapp} style={{color: "#69E4D2",}} /></div></a></button>
                   <button><a href="https://www.linkedin.com/in/hatusalbertassi/" target='_blank'><div className='service-icon'><FontAwesomeIcon icon={faLinkedin} style={{color: "#69E4D2",}} /></div></a></button>
@@ -87,6 +84,9 @@ function App() {
               <div className='working'>
                 <h3>Trybe<span> ~ 2022/2023 </span></h3>
                 <p>Fundamentos de Desenvolvimento Web, Desenvolvimento Front-end, Desenvolvimento Back-end, Ciência da Computação, Engenharia de Software, Metodologias Ágeis e habilidades comportamentais.</p>
+                <br></br>
+                <h3>Universidade Geraldo Di Biase <span> ~ 2015/2019 </span></h3>
+                <p>Bacharelado em Engenharia de Produção.</p>
               </div>
             </section>
             <hr></hr>
@@ -166,6 +166,7 @@ function App() {
           </div>
         </div>
         <div className='wapp-icon'><a href="https://wa.me/5524999252710" target='_blank'><FontAwesomeIcon icon={faWhatsapp}size="2xl" style={{color: "#3dff5d",}} /></a></div>
+      <Footer />
       </section>
     </body>
   )

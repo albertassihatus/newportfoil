@@ -1,0 +1,99 @@
+@media (max-width: 992px)
+{
+body {
+    padding: 0 15px 0 15px;
+}
+#root {
+    max-width: 100%;
+    padding: 0px;
+}
+.header {
+    position: fixed;
+    padding: 0 30px;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    background: 0 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+}
+
+.header-logo p {
+    width: 100px;
+    text-align: left;
+}
+
+.btn-menu {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+}
+.btn-menu-mobile {
+    display: block;
+    background-color: red;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.indexContainer {
+    display: none;
+}
+
+.bg-filter {
+    width: 100%;
+    position: static;
+}
+
+.photo-bg {
+    height: 400px;
+    margin-top: 50px;
+}
+
+.section-box {
+    margin-top: 450px;
+    width: 100%;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+.about-p {
+    text-align: center;
+}
+
+.about-social {
+    justify-content: center;
+}
+
+.working {
+    width: 100%;
+}
+
+.working h3 {
+    text-align: left;
+}
+.wapp-icon {
+    display: none;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+}

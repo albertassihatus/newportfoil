@@ -32,6 +32,10 @@ font-weight: bold;
     align-items: center;
 }
 
+.btn-menu-mobile {
+    display: none;
+}
+
 .header-logo a {
     display: flex;
     justify-content: space-between;
@@ -151,7 +155,9 @@ hr {
 .about-list span {
     color: white !important;
 }
-
+.about-p {
+    text-align: left;
+}
 .about-social {
     display: flex;
     justify-content: flex-start;
@@ -274,5 +280,9 @@ hr {
     right: 0;
     font-size: 30px;
     padding: 20px;
+  }
+
+  .footer {
+    display: none;
   }
   

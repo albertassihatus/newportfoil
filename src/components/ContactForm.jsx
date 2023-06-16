@@ -1,35 +1,70 @@
-import React, { useState } from 'react';
-import '../styles/Form.css' 
+import { useState } from 'react';
+import emailjs from '@emailjs/browser'
+import '../styles/form.css'
 
-const ContactForm = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
 
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
+function ContactForm() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
+  function sendEmail(e) {
+    e.preventDefault();
+    console.log(name);
 
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
-    console.log(e.target.value);
-  };
-    return (
-      <section id="contact">
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+    }
+
+    emailjs.send("service_r7z901o", "template_jban28i", templateParams, "tFYX2ohZAd5ILJB34" )
+    .then((res) => {
+      alert("EMAIL ENVIADO")
+      setEmail('')
+      setName('')
+      setMessage('')
+    }, (err) => {
+      console.log("ERRO:", err)
+    })
+  }
+
+  return (
+    <section id="contact">
         <h2>Contato</h2>
         <h3>FALE COMIGO</h3>
-        <form action="" className='contact-form'>
-            <input type="text" placeholder='Nome Completo' id="name" value={name} onChange={handleNameChange}  />
-            <input type="email" placeholder='Email' id="email" value={email} onChange={handleEmailChange} />
-            <textarea cols="25" rows="5" placeholder='Menssagem' id="message" value={message} onChange={handleMessageChange} />
-            <button>Enviar Mensagem</button>
-        </form>
-      </section>
-    );
-  }
+
+      <form className='contact-form' onSubmit={sendEmail}>
+        <input 
+          className="input"
+          type="text"
+          placeholder="Nome"
+          required
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+        />
+        
+        <input 
+          className="input"
+          type="text"
+          placeholder="Email"
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          value={email}
+        />
+
+        <textarea 
+          className="textarea"
+          placeholder="Mensagem"
+          onChange={(e) => setMessage(e.target.value)}
+          required
+          value={message}
+        />
+
+        <button type="submit" value="Enviar">Enviar Mensagem</button>
+      </form>
+    </section>
+  );
+}
 
 export default ContactForm;
